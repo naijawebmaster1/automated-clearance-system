@@ -44,13 +44,16 @@
                 <select name="role_id"
                     class="block mt-1 w-full border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm">
                     <option value="user">User</option>
-                    <!-- <option value="admin">Admin</option>
+                    <option value="admin">Admin</option>
                     <option value="library">Library</option>
                     <option value="Hostel">Hostel</option>
                     <option value="bursar">Bursar</option>
                     <option value="Faculty">Faculty</option>
+                    <option value="Security">Security</option>
+                    <option value="Sport">Sport</option>
+                    <option value="Department">Department</option>
                     <option value="User">User</option>
-                    <option value="laboratory">Laboratory</option> -->
+                    <option value="laboratory">Laboratory</option>
                 </select>
             </div>
             <div class="flex items-center justify-end mt-4">

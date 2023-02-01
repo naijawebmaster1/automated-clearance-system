@@ -65,6 +65,54 @@
                         class="flex flex-col bg-white drop-shadow hover:drop-shadow-lg hover:opacity-70 rounded-md">
                         <!-- <img src=" #/wp-content/uploads/2022/07/kindacode-example.png"
                             alt="Fiction Product" class="h-36 object-cover rounded-tl-md rounded-tr-md"> -->
+                        @if(Auth::user()->security =='')<div
+                            class="h-36 object-cover rounded-tl-md rounded-tr-md text-5xl text-center flex justify-center uppercase pt-10 bg-yellow-200 text-white font-bold">
+                            Pending </div>@endif @if(Auth::user()->security =='approved')<div
+                            class="h-36 object-cover rounded-tl-md rounded-tr-md text-5xl text-center flex justify-center uppercase pt-10 bg-green-200 text-white font-bold">
+                            {{Auth::user()->security}} </div>@endif @if(Auth::user()->security =='declined') <div
+                            class="h-36 object-cover rounded-tl-md rounded-tr-md text-5xl text-center flex justify-center uppercase pt-10 bg-pink-200 text-white font-bold">
+                            {{Auth::user()->security}} </div>@endif <div class="px-3 py-2">
+                            <h1 class="font-semibold">Security</h1>
+                            <p class="text-sm">{{Auth::user()->security}}</p>
+                        </div>
+                    </a>
+                    <!-- product card -->
+                    <a href="#"
+                        class="flex flex-col bg-white drop-shadow hover:drop-shadow-lg hover:opacity-70 rounded-md">
+                        <!-- <img src=" #/wp-content/uploads/2022/07/kindacode-example.png"
+                            alt="Fiction Product" class="h-36 object-cover rounded-tl-md rounded-tr-md"> -->
+                        @if(Auth::user()->sport =='')<div
+                            class="h-36 object-cover rounded-tl-md rounded-tr-md text-5xl text-center flex justify-center uppercase pt-10 bg-yellow-200 text-white font-bold">
+                            Pending </div>@endif @if(Auth::user()->sport =='approved')<div
+                            class="h-36 object-cover rounded-tl-md rounded-tr-md text-5xl text-center flex justify-center uppercase pt-10 bg-green-200 text-white font-bold">
+                            {{Auth::user()->sport}} </div>@endif @if(Auth::user()->sport =='declined') <div
+                            class="h-36 object-cover rounded-tl-md rounded-tr-md text-5xl text-center flex justify-center uppercase pt-10 bg-pink-200 text-white font-bold">
+                            {{Auth::user()->sport}} </div>@endif <div class="px-3 py-2">
+                            <h1 class="font-semibold">Sport</h1>
+                            <p class="text-sm">{{Auth::user()->sport}}</p>
+                        </div>
+                    </a>
+                    <!-- product card -->
+                    <a href="#"
+                        class="flex flex-col bg-white drop-shadow hover:drop-shadow-lg hover:opacity-70 rounded-md">
+                        <!-- <img src=" #/wp-content/uploads/2022/07/kindacode-example.png"
+                            alt="Fiction Product" class="h-36 object-cover rounded-tl-md rounded-tr-md"> -->
+                        @if(Auth::user()->department =='')<div
+                            class="h-36 object-cover rounded-tl-md rounded-tr-md text-5xl text-center flex justify-center uppercase pt-10 bg-yellow-200 text-white font-bold">
+                            Pending </div>@endif @if(Auth::user()->department =='approved')<div
+                            class="h-36 object-cover rounded-tl-md rounded-tr-md text-5xl text-center flex justify-center uppercase pt-10 bg-green-200 text-white font-bold">
+                            {{Auth::user()->department}} </div>@endif @if(Auth::user()->department =='declined') <div
+                            class="h-36 object-cover rounded-tl-md rounded-tr-md text-5xl text-center flex justify-center uppercase pt-10 bg-pink-200 text-white font-bold">
+                            {{Auth::user()->sport}} </div>@endif <div class="px-3 py-2">
+                            <h1 class="font-semibold">Department</h1>
+                            <p class="text-sm">{{Auth::user()->department}}</p>
+                        </div>
+                    </a>
+                    <!-- product card -->
+                    <a href="#"
+                        class="flex flex-col bg-white drop-shadow hover:drop-shadow-lg hover:opacity-70 rounded-md">
+                        <!-- <img src=" #/wp-content/uploads/2022/07/kindacode-example.png"
+                            alt="Fiction Product" class="h-36 object-cover rounded-tl-md rounded-tr-md"> -->
                         @if(Auth::user()->hostel =='')<div
                             class="h-36 object-cover rounded-tl-md rounded-tr-md text-5xl text-center flex justify-center uppercase pt-10 bg-yellow-200 text-white font-bold">
                             Pending </div>@endif @if(Auth::user()->hostel =='approved')<div

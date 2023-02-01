@@ -37,6 +37,21 @@ return [
             'payments' => 'c,r,u,d',
             'profile' => 'r,u'
         ],
+        'sport' => [
+            'users' => 'c,r,u,d',
+            'payments' => 'c,r,u,d',
+            'profile' => 'r,u'
+        ],
+        'security' => [
+            'users' => 'c,r,u,d',
+            'payments' => 'c,r,u,d',
+            'profile' => 'r,u'
+        ],
+        'department' => [
+            'users' => 'c,r,u,d',
+            'payments' => 'c,r,u,d',
+            'profile' => 'r,u'
+        ],
         'laboratory' => [
             'users' => 'c,r,u,d',
             'payments' => 'c,r,u,d',

@@ -48,6 +48,12 @@ class DashboardController extends Controller
                return view('facultyDashboard', ['data' => $userData]);
           } elseif (Auth::user()->hasRole('laboratory')) {
                return view('laboratoryDashboard', ['data' => $userData]);
+          } elseif (Auth::user()->hasRole('sport')) {
+               return view('sportDashboard', ['data' => $userData]);
+          }elseif (Auth::user()->hasRole('security')) {
+               return view('securityDashboard', ['data' => $userData]);
+          }elseif (Auth::user()->hasRole('department')) {
+               return view('departmentDashboard', ['data' => $userData]);
           }
      }
 
